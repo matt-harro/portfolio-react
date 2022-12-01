@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, useReducer } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import Nav from './components/layout/nav/Nav';
 import Projects from './components/pages/Projects';
@@ -15,7 +15,7 @@ const App = (props) => {
   // init themes
   useEffect(() => {
     setThemes(THEMES);
-  });
+  }, []);
 
   useEffect(() => {
     // add theme class

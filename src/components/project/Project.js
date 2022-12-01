@@ -4,8 +4,13 @@ import Tag from './Tag';
 import classes from './Project.module.css';
 
 const Project = (props) => {
-  const { imgPath, imgAltText, title, description, tags, siteUrl, repoUrl } =
-    props.data;
+  const {
+    imgPath,
+    imgAltText,
+    title,
+    description,
+    tags /* TODO siteUrl, repoUrl*/,
+  } = props.data;
 
   const tagsList = tags.map((tagName) => (
     <Tag key={tagName} tagName={tagName} tagClass={`tag--${tagName}`} />
