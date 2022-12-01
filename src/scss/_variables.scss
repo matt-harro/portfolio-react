@@ -1,0 +1,88 @@
+:root {
+  // font families
+  --font-headline: 'Noto Sans', SF Pro Display, SF Pro Icons, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  --font-subhead: 'Noto Sans', SF Pro Display, SF Pro Icons, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  --font-body: 'Noto Sans', SF Pro Display, SF Pro Icons, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+
+  //font sizes scale - rounded Major Third Scale
+  //  6  8  10  12  16  20  24  30  38  48  60  75  93  116
+  --font-sz-1: 0.6rem;
+  --font-sz-2: 0.8rem;
+  --font-sz-3: 1rem;
+  --font-sz-4: 1.2rem;
+  --font-sz-5: 1.6rem;
+  --font-sz-6: 2rem;
+  --font-sz-7: 2.4rem;
+  --font-sz-8: 3rem;
+  --font-sz-9: 3.8rem;
+  --font-sz-10: 4.8rem;
+  --font-sz-11: 6rem;
+  --font-sz-12: 7.5rem;
+  --font-sz-13: 9.3rem;
+  --font-sz-14: 11.6rem;
+
+  // whitespace scale - taken from Carbon design systems
+  //  2  4  8  12  16  24  32  40  48  64  80  96  160
+  --ws-1: 0.2rem;
+  --ws-2: 0.4rem;
+  --ws-3: 0.8rem;
+  --ws-4: 1.2rem;
+  --ws-5: 1.6rem;
+  --ws-6: 2.4rem;
+  --ws-7: 3.2rem;
+  --ws-8: 4.8rem;
+  --ws-9: 6.4rem;
+  --ws-10: 8rem;
+  --ws-11: 9.6rem;
+  --ws-12: 160rem;
+
+  // colors
+  // gray - from OpenColor
+  --oc-gray-0: #f8f9fa;
+  --oc-gray-0-rgb: 248, 249, 250;
+  --oc-gray-1: #f1f3f5;
+  --oc-gray-1-rgb: 241, 243, 245;
+  --oc-gray-2: #e9ecef;
+  --oc-gray-2-rgb: 233, 236, 239;
+  --oc-gray-3: #dee2e6;
+  --oc-gray-3-rgb: 222, 226, 230;
+  --oc-gray-4: #ced4da;
+  --oc-gray-4-rgb: 206, 212, 218;
+  --oc-gray-5: #adb5bd;
+  --oc-gray-5-rgb: 173, 181, 189;
+  --oc-gray-6: #868e96;
+  --oc-gray-6-rgb: 134, 142, 150;
+  --oc-gray-7: #495057;
+  --oc-gray-7-rgb: 73, 80, 87;
+  --oc-gray-8: #343a40;
+  --oc-gray-8-rgb: 52, 58, 64;
+  --oc-gray-9: #212529;
+  --oc-gray-9-rgb: 33, 37, 41;
+
+  --c-html: #e34c26;
+  --c-html-text: #fff;
+  --c-css: #264de4;
+  --c-css-text: #fff;
+  --c-sass: #c69;
+  --c-sass-text: #fff;
+  --c-js: #f0db4f;
+  --c-js-text: #323330;
+  --c-react: #61dbfb;
+  --c-react-text: #fff;
+  --c-redux: #764abc;
+  --c-redux-text: #fff;
+
+  // shadows
+  --rgba-box-shadow: 0, 0, 0, 0.4;
+  --box-shadow: 0px 4px 8px rgba(var(--rgba-box-shadow));
+
+  // border-raduis
+
+  --radius-0: none;
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-50: 50%;
+}

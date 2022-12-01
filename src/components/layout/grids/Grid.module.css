@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  row-gap: var(--ws-6);
+  column-gap: var(--ws-6);
+}
+
+.grid.auto-rows {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-auto-rows: max-content;
+}

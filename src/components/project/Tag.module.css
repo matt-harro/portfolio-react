@@ -1,0 +1,29 @@
+.tag {
+  display: inline-block;
+  border-radius: 100rem;
+  padding: var(--ws-1) var(--ws-3);
+  margin: 0 var(--ws-1);
+
+  font-size: var(--font-sz-4);
+}
+
+.tag.tag--html {
+  background-color: var(--c-html);
+  color: var(--c-html-text);
+}
+.tag.tag--css {
+  background-color: var(--c-css);
+  color: var(--c-css-text);
+}
+.tag.tag--js {
+  background-color: var(--c-js);
+  color: var(--c-js-text);
+}
+.tag.tag--react {
+  background-color: var(--c-react);
+  color: var(--c-react-text);
+}
+.tag.tag--redux {
+  background-color: var(--c-redux);
+  color: var(--c-redux-text);
+}

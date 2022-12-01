@@ -1,0 +1,57 @@
+.project {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  --c-text-project: var(
+    --oc-gray-9
+  ); /* TODO is this good enough as a 
+  practice to invert color for dark theme */
+}
+
+.project__img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: var(--card-radius-theme, var(--card-radius));
+  border-top-right-radius: var(--card-radius-theme, var(--card-radius));
+
+  z-index: 10;
+  opacity: 01;
+  filter: blur(0);
+  transition: opacity 0.3s linear, filter 0.3s linear;
+}
+
+.project:hover .project__img {
+  opacity: 0.3;
+  filter: blur(0.3rem);
+  z-index: 5;
+}
+
+.project__figcaption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  padding: var(--ws-4) var(--ws-6);
+  padding-top: var(--ws-6);
+  color: var(--c-text-project);
+
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project__figcaption {
+  opacity: 1;
+  z-index: 10;
+}
+
+.project__tags {
+  text-align: center;
+  filter: grayscale(0.66);
+}
+
+.project h2 {
+  margin-top: var(--ws-6);
+  margin-bottom: var(--ws-2);
+}

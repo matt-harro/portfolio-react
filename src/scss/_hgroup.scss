@@ -1,0 +1,13 @@
+.hgroup {
+  margin-bottom: var(--ws-7);
+}
+
+.hgroup .superscript {
+  font-size: var(--font-sz-5);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--ws-2);
+  color: var(--accent-color-theme, var(--accent-color)); // TODO
+  display: block;
+}

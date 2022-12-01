@@ -1,0 +1,7 @@
+.card {
+  position: relative;
+  background-color: #fff;
+
+  border-radius: var(--card-radius-theme, var(--card-radius));
+  box-shadow: var(--card-shadow-theme, var(--card-shadow));
+}

@@ -1,0 +1,21 @@
+.typography-headline {
+  font-size: var(--font-sz-9);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.15;
+  font-family: var(--font-headline);
+}
+.typography-header {
+  font-size: var(--font-sz-7);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.15;
+  font-family: var(--font-headline);
+}
+
+.typography-subhead {
+  font-size: var(--font-sz-5);
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: var(--font-subhead);
+}

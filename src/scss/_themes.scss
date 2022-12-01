@@ -1,0 +1,52 @@
+// Default app styles - applied to root
+// for
+:root {
+  // base styles
+  --accent-color: lightcoral;
+  --text-color: var(--oc-gray-9);
+  --background: linear-gradient(
+    to right bottom,
+    var(--oc-gray-0),
+    var(--oc-gray-2)
+  );
+
+  // nav component styles
+  --nav-background: rgba(var(--oc-gray-9-rgb), 0.8);
+  --nav-text-color: var(--oc-gray-0);
+  --nav-text-color-highlight: #fff;
+  --nav-border: 1px solid var(--nav-text-color);
+
+  // card component styles
+  --card-shadow: var(--box-shadow);
+  --card-radius: var(--radius-1);
+}
+
+// Dark mode
+.theme--dark {
+  // base styles
+  --accent-color-theme: lightcoral;
+  --text-color-theme: var(--oc-gray-0);
+  --card-shadow-theme: var(--box-shadow);
+  --background-theme: linear-gradient(
+    to right bottom,
+    var(--oc-gray-9),
+    var(--oc-gray-8)
+  );
+
+  // nav component styles
+  --nav-background-theme: rgba(var(0, 0, 0), 0.8);
+  --nav-border-theme: none;
+
+  // card component styles
+  --card-shadow: var(--box-shadow);
+  --card-radius-theme: var(--radius-2);
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  background: var(--background-theme, var(--background));
+  min-height: 100vh;
+  width: 100vw;
+  color: var(--text-color-theme, var(--text-color));
+}
