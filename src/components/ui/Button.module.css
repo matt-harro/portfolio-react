@@ -1,0 +1,21 @@
+.btn {
+  padding: var(--ws-2) var(--ws-4);
+  border-radius: 5px;
+  background: var(--color-primary, indigo);
+
+  box-shadow: none;
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+.btn:hover {
+  box-shadow: var(--box-shadow);
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn.btn--accent {
+  background: var(--accent-color-theme, var(--accent-color));
+}

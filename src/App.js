@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Nav from './components/layout/nav/Nav';
+import Welcome from './components/pages/Welcome';
+import Contact from './components/pages/Contact';
 import Projects from './components/pages/Projects';
 
 const rootEl = document.querySelector('#root');
@@ -41,10 +43,20 @@ const App = (props) => {
         <Nav onChangeTheme={changeThemesHandler} />
       </nav>
       <main>
-        <Route path='/welcome'>Welcome</Route>
-        <Route path='/projects'>
-          <Projects />
-        </Route>
+        <Switch>
+          <Route path='/welcome'>
+            <Welcome />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+          <Route path='/projects'>
+            <Projects />
+          </Route>
+          <Route path='/'>
+            <Redirect to='/welcome' />
+          </Route>
+        </Switch>
       </main>
     </Fragment>
   );

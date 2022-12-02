@@ -1,5 +1,5 @@
 import { NavLink, Link } from 'react-router-dom';
-import ToggleBtn from '../../ui/ToggleBtn';
+import Button from '../../ui/Button';
 
 import classes from './Nav.module.css';
 
@@ -29,7 +29,7 @@ const Nav = (props) => {
             </NavLink>
           </li>
         </ul>
-        <ToggleBtn onChangeTheme={props.onChangeTheme} />
+        <Button onClickHandler={props.onChangeTheme} />
       </div>
     </nav>
   );

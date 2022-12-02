@@ -4,6 +4,8 @@
   // base styles
   --accent-color: lightcoral;
   --text-color: var(--oc-gray-9);
+  --text-color-invert: #fff;
+  --primary-color: yellow;
   --background: linear-gradient(
     to right bottom,
     var(--oc-gray-0),
@@ -26,6 +28,8 @@
   // base styles
   --accent-color-theme: lightcoral;
   --text-color-theme: var(--oc-gray-0);
+  --text-color-invert-theme: var(--oc-gray-9);
+
   --card-shadow-theme: var(--box-shadow);
   --background-theme: linear-gradient(
     to right bottom,
