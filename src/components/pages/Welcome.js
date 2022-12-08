@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import Section from '../layout/sections/Section';
 import SectionContent from './../layout/sections/SectionContent';
 import Button from '../ui/Button';
-import SplitBox from '../layout/SplitBox';
 
 const Contact = (props) => {
   return (
