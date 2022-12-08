@@ -16,21 +16,21 @@ const Contact = (props) => {
           "A curious pursuit down a new road"
         </h3>
         <p>
-          Based in Townsville, my first career-life was surrounded by water and
-          fitness. Starting as a personal trainer and lifeguard, through to
-          performance swim coach training national level youth athletes. After 8
-          years of coaching I was ready for a change.
+          Townsville based, my first career-life was around water and fitness.
+          From personal-trainer/lifeguard. To performance swim coach, training
+          national level youth athletes. After 8 years of coaching. I was ready
+          for a change.
         </p>
         <p>
-          My second career-life is surrounded by fire and adrenaline as a first
-          responder in the fire brigade. This work is engaging and exciting but
-          I am ready to sink my teeth into something new and creative.
+          My second career-life is around fire and adrenaline. As a first
+          responder in the fire brigade. This work is engaging and exciting.
+          However, I am ready to sink my teeth into something new and creative.
         </p>
         <p>
-          I am pursuing technology as a part-time frontend developer. With
-          Javascript and React under my belt and a growth mindset. I am looking
-          for entry level job opportunities that value further education and
-          training.
+          I am pursuing tech opportunites as a part-time frontend developer.
+          With Javascript and React under my belt and a growth mindset. I am
+          looking for entry level job opportunities, that value further
+          education and training.
         </p>
         <p>
           <span className='u-text-bold'>TLDR; </span>
@@ -39,7 +39,7 @@ const Contact = (props) => {
             responder | pursuing frontend dev work
           </span>
         </p>
-        <p>I build. I work hard. I encourage feedback.</p>
+        <p>Think. Build. Seek feedback. Repeat</p>
         <Button>
           <Link to='/projects'>See Projects</Link>
         </Button>
