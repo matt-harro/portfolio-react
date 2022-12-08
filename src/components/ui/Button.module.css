@@ -1,7 +1,8 @@
 .btn {
-  padding: var(--ws-2) var(--ws-4);
+  padding: var(--ws-3) var(--ws-4);
   border-radius: 5px;
-  background: var(--color-primary, indigo);
+  background: var(--color-primary-theme, var(--color-primary, #555));
+  color: #fff;
 
   box-shadow: none;
   transform: translateY(0px);

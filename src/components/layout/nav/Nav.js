@@ -29,7 +29,7 @@ const Nav = (props) => {
             </NavLink>
           </li>
         </ul>
-        <Button onClickHandler={props.onChangeTheme} />
+        <Button onClickHandler={props.onChangeTheme}>Themes</Button>
       </div>
     </nav>
   );

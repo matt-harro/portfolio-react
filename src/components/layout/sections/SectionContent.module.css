@@ -4,3 +4,7 @@
   max-width: 120rem;
   padding: 0 var(--ws-8);
 }
+
+.section-content.narrow {
+  max-width: 80rem;
+}

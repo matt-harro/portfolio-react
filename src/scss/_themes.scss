@@ -2,6 +2,7 @@
 // for
 :root {
   // base styles
+  --color-primary: #e67700;
   --accent-color: lightcoral;
   --text-color: var(--oc-gray-9);
   --text-color-invert: #fff;
@@ -26,6 +27,7 @@
 // Dark mode
 .theme--dark {
   // base styles
+  --color-primary-theme: #e67700;
   --accent-color-theme: lightcoral;
   --text-color-theme: var(--oc-gray-0);
   --text-color-invert-theme: var(--oc-gray-9);

@@ -14,8 +14,15 @@
 }
 
 .typography-subhead {
-  font-size: var(--font-sz-5);
-  line-height: 1.2;
+  margin-bottom: var(--ws-5);
+
+  font-size: var(--font-sz-6);
+  line-height: 1.5;
   font-weight: 600;
   font-family: var(--font-subhead);
+}
+
+p {
+  margin-bottom: var(--ws-5);
+  line-height: 1.8;
 }
