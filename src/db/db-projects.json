@@ -1,0 +1,25 @@
+{
+  "PROJECT_DATA": [
+    {
+      "id": "forkify",
+      "imgPath": "/img/forkify-320-240.png",
+      "imgAltText": "forkify logo",
+      "title": "Forkify",
+      "description": "Recipe library application with a custom recipe upload feature.",
+      "tags": ["html", "css", "js", "react", "redux"],
+      "siteUrl": "www.forkify-mattdev.netlify.app",
+      "repoUrl": "https://github.com/matt-harro/forkify",
+      "featured": "true"
+    },
+    {
+      "id": "p2",
+      "imgPath": "/img/forkify-320-240.png",
+      "imgAltText": "forkify logo",
+      "title": "Another Test Project",
+      "description": "Test Project to test out the fancy new project cards",
+      "tags": ["html", "css", "js", "react", "redux"],
+      "siteUrl": "www.duckduckgo.com",
+      "repoUrl": "www.gitlab.com"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import Nav from './components/layout/nav/Nav';
 import Welcome from './components/pages/Welcome';
 import Contact from './components/pages/Contact';
 import Projects from './components/pages/Projects';
+import Project from './components/pages/Projects';
 
 const rootEl = document.querySelector('#root');
 const THEMES = ['default', 'theme--dark'];
@@ -50,8 +51,12 @@ const App = (props) => {
           <Route path='/contact'>
             <Contact />
           </Route>
-          <Route path='/projects'>
+          <Route path='/projects' exact>
             <Projects />
+          </Route>
+          <Route path='projects/:id'>
+            Project
+            {/* <Project id='forkify' /> */}
           </Route>
           <Route path='/'>
             <Redirect to='/welcome' />

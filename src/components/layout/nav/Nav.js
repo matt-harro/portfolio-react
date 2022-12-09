@@ -4,7 +4,6 @@ import Button from '../../ui/Button';
 import classes from './Nav.module.css';
 
 const Nav = (props) => {
-  console.log(NavLink);
   return (
     <nav className={classes.nav}>
       <div className={classes['nav--content']}>
