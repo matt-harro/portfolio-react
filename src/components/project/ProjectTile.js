@@ -1,15 +1,23 @@
 import { Link } from 'react-router-dom';
 import Card from '../ui/Card';
 
+import classes from './ProjectTile.module.css';
+
 const ProjectTile = (props) => {
-  const { imgPath, imgAltText, id } = props;
+  const { imgPath, imgAltText, id, siteUrl } = props;
 
   return (
-    <Card>
-      <Link to={`/projects/${id}`}>
-        <img src={imgPath} alt={imgAltText} />
-      </Link>
-    </Card>
+    //  TODO <Link to={`/projects/${id}`}>
+    <a href={`${siteUrl}`} target='_blank'>
+      <Card>
+        <img
+          className={classes['project-tile']}
+          src={imgPath}
+          alt={imgAltText}
+        />
+      </Card>
+    </a>
+    // </Link>
   );
 };
 

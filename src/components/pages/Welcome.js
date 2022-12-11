@@ -17,14 +17,14 @@ const Contact = (props) => {
         </h3>
         <p>
           Townsville based, my first career-life was around water and fitness.
-          From personal-trainer/lifeguard. To performance swim coach, training
-          national level youth athletes. After 8 years of coaching. I was ready
-          for a change.
+          Personal-trainer/lifeguard to performance swim coach training national
+          level youth athletes. After 8 years of coaching. I was ready for a
+          change.
         </p>
         <p>
           My second career-life is around fire and adrenaline. As a first
-          responder in the fire brigade. This work is engaging and exciting.
-          However, I am ready to sink my teeth into something new and creative.
+          responder in the fire brigade, work is engaging and exciting. However,
+          I am ready to sink my teeth into something new and creative.
         </p>
         <p>
           I am pursuing tech opportunites as a part-time frontend developer.

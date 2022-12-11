@@ -1,7 +1,7 @@
 .section {
-  padding: var(--ws-9) 0;
+  padding: var(--ws-7) 0;
 }
 
 .section:first-of-type {
-  padding: var(--ws-11) 0 var(--ws-9) 0;
+  padding-top: var(--ws-11);
 }

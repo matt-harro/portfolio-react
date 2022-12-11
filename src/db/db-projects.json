@@ -9,17 +9,40 @@
       "tags": ["html", "css", "js", "react", "redux"],
       "siteUrl": "www.forkify-mattdev.netlify.app",
       "repoUrl": "https://github.com/matt-harro/forkify",
-      "featured": "true"
+      "displaySections": ["course"]
     },
     {
-      "id": "p2",
-      "imgPath": "/img/forkify-320-240.png",
-      "imgAltText": "forkify logo",
-      "title": "Another Test Project",
-      "description": "Test Project to test out the fancy new project cards",
-      "tags": ["html", "css", "js", "react", "redux"],
-      "siteUrl": "www.duckduckgo.com",
-      "repoUrl": "www.gitlab.com"
+      "id": "natours",
+      "imgPath": "/img/natours-320-240.png",
+      "imgAltText": "natours logo",
+      "title": "Natours",
+      "description": "Exciting tours for adventurous people",
+      "tags": ["html", "css", "js"],
+      "siteUrl": "https://natours-mattdev.netlify.app/",
+      "repoUrl": "https://github.com/matt-harro/natours",
+      "displaySections": ["course"]
+    },
+    {
+      "id": "omnifood",
+      "imgPath": "/img/omnifood-320-240.png",
+      "imgAltText": "omnifood logo",
+      "title": "Natours",
+      "description": "A healthy meal delivered to you door every single day",
+      "tags": ["html", "css", "js"],
+      "siteUrl": "https://omnifood-mattdev.netlify.app/",
+      "repoUrl": "https://github.com/matt-harro/omnifood",
+      "displaySections": ["course"]
+    },
+    {
+      "id": "play-kings-cup",
+      "imgPath": "/img/play-kings-cup-320-240.png",
+      "imgAltText": "play kings cup logo",
+      "title": "Play-Kings-Cup",
+      "description": "His Majesty is waiting for your drunken ass",
+      "tags": ["html", "css", "js"],
+      "siteUrl": "https://play-kings-cup-mattdev.netlify.app/",
+      "repoUrl": "https://github.com/matt-harro/play-kings-cup",
+      "displaySections": ["featured"]
     }
   ]
 }

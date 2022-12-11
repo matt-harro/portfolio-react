@@ -2,11 +2,10 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  filter: brightness(1);
+  backdrop-filter: blur(4px);
+
   transition: filter 0.3s linear;
-}
-.nav:hover {
-  filter: brightness(0.95);
+  z-index: 1000;
 }
 
 .nav--content {
@@ -17,6 +16,7 @@
   color: var(--nav-text-color-theme, var(--nav-text-color));
   background: var(--nav-background-theme, var(--nav-background));
   border-bottom: var(--nav-border-theme, var(--nav-border));
+  filter: blur;
 }
 
 .nav ul {

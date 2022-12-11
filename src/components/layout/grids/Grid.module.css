@@ -2,10 +2,11 @@
   display: grid;
   row-gap: var(--ws-6);
   column-gap: var(--ws-6);
+  justify-content: center;
 }
 
 .grid.auto-rows {
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-columns: repeat(auto-fit, 28rem);
   grid-auto-rows: max-content;
 }
 

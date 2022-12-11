@@ -1,7 +1,14 @@
 .card {
+  display: flex;
   position: relative;
-  background-color: #fff;
+  background-color: inherit;
 
   border-radius: var(--card-radius-theme, var(--card-radius));
   box-shadow: var(--card-shadow-theme, var(--card-shadow));
+
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
