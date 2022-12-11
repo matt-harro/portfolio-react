@@ -4,7 +4,6 @@ import Nav from './components/layout/nav/Nav';
 import Welcome from './components/pages/Welcome';
 import Contact from './components/pages/Contact';
 import Projects from './components/pages/Projects';
-import Project from './components/pages/Projects';
 
 const rootEl = document.querySelector('#root');
 const THEMES = ['default', 'theme--dark'];
