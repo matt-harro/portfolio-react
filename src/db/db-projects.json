@@ -7,7 +7,7 @@
       "title": "Forkify",
       "description": "Recipe library application with a custom recipe upload feature.",
       "tags": ["html", "css", "js", "react", "redux"],
-      "siteUrl": "www.forkify-mattdev.netlify.app",
+      "siteUrl": "https://forkify-mattdev.netlify.app",
       "repoUrl": "https://github.com/matt-harro/forkify",
       "displaySections": ["course"]
     },
