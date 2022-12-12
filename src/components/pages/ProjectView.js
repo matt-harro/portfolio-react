@@ -1,7 +1,7 @@
 import Card from '../ui/Card';
-import Tag from './Tag';
+import Tag from '../project/Tag';
 
-import classes from './Project.module.css';
+import classes from './ProjectView.module.css';
 
 const Project = (props) => {
   const {
