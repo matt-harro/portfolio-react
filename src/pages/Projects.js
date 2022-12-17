@@ -45,7 +45,7 @@ const Projects = (props) => {
           <hgroup className='hgroup'>
             <h2 className='typography-headline u-text-centered'>
               <span className='superscript'>Learning Favourites</span>
-              Built On Course
+              Built on Course
             </h2>
           </hgroup>
           <Grid type='aspect-4-3'>

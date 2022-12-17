@@ -1,9 +1,7 @@
-// Default app styles - applied to root
-// for
 :root {
   // base styles
-  --color-primary: #e67700;
-  --accent-color: lightcoral;
+  --color-primary-theme: var(--c-css);
+  --accent-color-theme: #e67700;
   --text-color: var(--oc-gray-9);
   --text-color-invert: #fff;
   --primary-color: yellow;
@@ -12,6 +10,10 @@
     var(--oc-gray-0),
     var(--oc-gray-2)
   );
+
+  // --font-headline-theme: 'noto sans';
+  // --font-subhead-theme: 'star jedi';
+  // --font-body-theme: 'fjalla';
 
   // nav component styles
   --nav-background: rgba(var(--oc-gray-9-rgb), 0.8);
@@ -22,30 +24,6 @@
   // card component styles
   --card-shadow: var(--box-shadow);
   --card-radius: var(--radius-0);
-}
-
-// Dark mode
-.theme--dark {
-  // base styles
-  --color-primary-theme: #e67700;
-  --accent-color-theme: lightcoral;
-  --text-color-theme: var(--oc-gray-0);
-  --text-color-invert-theme: var(--oc-gray-9);
-
-  --card-shadow-theme: var(--box-shadow);
-  --background-theme: linear-gradient(
-    to right bottom,
-    var(--oc-gray-9),
-    var(--oc-gray-8)
-  );
-
-  // nav component styles
-  --nav-background-theme: rgba(var(0, 0, 0), 0.8);
-  --nav-border-theme: none;
-
-  // card component styles
-  --card-shadow: var(--box-shadow);
-  --card-radius-theme: var(--radius-2);
 }
 
 #root {

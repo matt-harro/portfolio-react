@@ -1,0 +1,29 @@
+// Dark mode
+.jedi-theme {
+  // base styles
+  --color-primary-theme: #15f2fd;
+  --accent-color-theme: #eedb00;
+  // --accent-color-theme: #15f2fd;
+  --text-color-theme: var(--oc-gray-0);
+  --text-color-invert-theme: var(--oc-gray-9);
+
+  --font-headline-theme: 'star jedi';
+  --font-subhead-theme: 'star jedi';
+  --font-body-theme: 'fjalla';
+
+  --card-shadow-theme: var(--box-shadow);
+  --background-theme: linear-gradient(
+    to right bottom,
+    var(--oc-gray-9),
+    var(--oc-gray-8)
+  );
+
+  // nav component styles
+  --nav-background-theme: none;
+  --nav-background-image-theme: url('../../img/starry-sky.jpg');
+  --nav-border-theme: none;
+
+  // card component styles
+  --card-shadow: var(--box-shadow);
+  --card-radius-theme: var(--radius-2);
+}

@@ -7,46 +7,48 @@ import Projects from './pages/Projects';
 import ProjectView from './pages/ProjectView';
 
 const rootEl = document.querySelector('#root');
-const THEMES = ['default', 'theme--dark'];
+
+const themes = ['light-theme', 'dark-theme', 'jedi-theme'];
 
 const App = (props) => {
-  const [themes, setThemes] = useState(null);
-  // TODO
   // initial functionality to toggle through themes, while creating portfolio
+  // const [themes, setThemes] = useState([
+  //   'light-theme',
+  //   'dark-theme',
+  //   'jedi-theme',
+  // ]);
   const [activeThemeIndex, setActiveThemeIndex] = useState(0);
 
-  // init themes
   useEffect(() => {
-    setThemes(THEMES);
-  }, []);
+    rootEl.classList.remove(rootEl.classList.value || '*');
 
-  useEffect(() => {
-    // add theme class
-    if (themes) rootEl.classList.add(themes[activeThemeIndex]);
-  }, [themes, activeThemeIndex]);
+    rootEl.classList.add(themes[activeThemeIndex]);
+  }, [activeThemeIndex]);
 
   const changeThemesHandler = () => {
-    // remove old class
-    rootEl.classList.remove(themes[activeThemeIndex]);
-
-    // rotate to next theme or start at default
-    if (activeThemeIndex !== themes.length - 1) {
-      setActiveThemeIndex((prevState) => prevState + 1);
-      rootEl.classList.add(themes[activeThemeIndex]);
-    } else {
-      setActiveThemeIndex(0);
-    }
+    rootEl.classList.remove(rootEl.cl);
+    console.log(rootEl.classList.value);
+    setActiveThemeIndex((prevState) =>
+      prevState >= themes.length - 1 ? 0 : activeThemeIndex + 1
+    );
+    console.log(activeThemeIndex);
   };
 
   return (
     <Fragment>
       <nav>
-        <Nav onChangeTheme={changeThemesHandler} />
+        <Nav
+          onChangeTheme={changeThemesHandler}
+          theme={themes[activeThemeIndex]}
+        />
       </nav>
       <main>
         <Switch>
           <Route path='/welcome'>
-            <Welcome />
+            <Welcome
+              onChangeTheme={changeThemesHandler}
+              theme={themes[activeThemeIndex]}
+            />
           </Route>
           <Route path='/contact'>
             <Contact />

@@ -4,11 +4,25 @@ import Button from '../../ui/Button';
 import classes from './Nav.module.css';
 
 const Nav = (props) => {
+  const themeBtnText = props.theme.split('-').join(' ').toUpperCase();
   return (
     <nav className={classes.nav}>
       <div className={classes['nav--content']}>
-        <Link to='/'>Logo</Link>
         <ul>
+          <li>
+            <Link className={classes.logo} to='/'>
+              Logo
+            </Link>
+          </li>
+          <li>
+            <NavLink
+              activeClassName={classes.active}
+              className={classes.navlink}
+              to='/welcome'
+            >
+              Welcome
+            </NavLink>
+          </li>
           <li>
             <NavLink
               activeClassName={classes.active}
@@ -27,8 +41,10 @@ const Nav = (props) => {
               Projects
             </NavLink>
           </li>
+          <li>
+            <Button onClickHandler={props.onChangeTheme}>{themeBtnText}</Button>
+          </li>
         </ul>
-        <Button onClickHandler={props.onChangeTheme}>Themes</Button>
       </div>
     </nav>
   );

@@ -3,14 +3,14 @@
   line-height: 1.1;
   font-weight: 500;
   letter-spacing: -0.15;
-  font-family: var(--font-headline);
+  font-family: var(--font-headline-theme, var(--font-headline, 'san-serif'));
 }
 .typography-header {
   font-size: var(--font-sz-7);
   line-height: 1.1;
   font-weight: 500;
   letter-spacing: -0.15;
-  font-family: var(--font-headline);
+  font-family: var(--font-headline-theme, var(--font-headline, 'san-serif'));
 }
 
 .typography-subhead {
@@ -19,7 +19,7 @@
   font-size: var(--font-sz-6);
   line-height: 1.5;
   font-weight: 600;
-  font-family: var(--font-subhead);
+  font-family: var(--font-subhead-theme, var(--font-subhead, 'san-serif'));
 }
 
 p {

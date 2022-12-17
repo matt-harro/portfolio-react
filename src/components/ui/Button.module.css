@@ -1,8 +1,9 @@
 .btn {
   padding: var(--ws-3) var(--ws-4);
+  font-size: inherit;
+  color: #fff;
   border-radius: 5px;
   background: var(--color-primary-theme, var(--color-primary, #555));
-  color: #fff;
 
   box-shadow: none;
   transform: translateY(0px);
@@ -19,4 +20,8 @@
 
 .btn.btn--accent {
   background: var(--accent-color-theme, var(--accent-color));
+}
+
+.btn--invert {
+  color: var(--text-color-invert-theme);
 }
