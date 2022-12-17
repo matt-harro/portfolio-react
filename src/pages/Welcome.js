@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import Section from '../layout/sections/Section';
-import SectionContent from './../layout/sections/SectionContent';
-import Button from '../ui/Button';
+import Section from '../components/layout/sections/Section';
+import SectionContent from '../components/layout/sections/SectionContent';
+import Button from '../components/ui/Button';
 
 const Contact = (props) => {
   return (

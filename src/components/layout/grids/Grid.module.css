@@ -5,9 +5,14 @@
   justify-content: center;
 }
 
-.grid.auto-rows {
+.grid.aspect-4-3 {
   grid-template-columns: repeat(auto-fit, 28rem);
-  grid-auto-rows: max-content;
+  grid-auto-rows: 21rem;
+}
+
+.grid.aspect-1-1 {
+  grid-template-columns: repeat(auto-fit, 21rem);
+  grid-auto-rows: 21rem;
 }
 
 .grid.cols-2 {

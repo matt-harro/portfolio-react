@@ -2,7 +2,7 @@
   "PROJECT_DATA": [
     {
       "id": "forkify",
-      "imgPath": "/img/forkify-320-240.png",
+      "imgName": "forkify-320-240.png",
       "imgAltText": "forkify logo",
       "title": "Forkify",
       "description": "Recipe library application with a custom recipe upload feature.",
@@ -13,7 +13,7 @@
     },
     {
       "id": "natours",
-      "imgPath": "/img/natours-320-240.png",
+      "imgName": "natours-320-240.png",
       "imgAltText": "natours logo",
       "title": "Natours",
       "description": "Exciting tours for adventurous people",
@@ -24,7 +24,7 @@
     },
     {
       "id": "omnifood",
-      "imgPath": "/img/omnifood-320-240.png",
+      "imgName": "omnifood-320-240.png",
       "imgAltText": "omnifood logo",
       "title": "Natours",
       "description": "A healthy meal delivered to you door every single day",
@@ -35,7 +35,7 @@
     },
     {
       "id": "play-kings-cup",
-      "imgPath": "/img/play-kings-cup-320-240.png",
+      "imgName": "play-kings-cup-320-240.png",
       "imgAltText": "play kings cup logo",
       "title": "Play-Kings-Cup",
       "description": "His Majesty is waiting for your drunken ass",

@@ -1,7 +1,7 @@
 .card {
-  display: flex;
-  position: relative;
-  background-color: inherit;
+  line-height: 0;
+  display: block;
+  margin: 0 auto;
 
   border-radius: var(--card-radius-theme, var(--card-radius));
   box-shadow: var(--card-shadow-theme, var(--card-shadow));

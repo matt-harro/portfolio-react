@@ -1,0 +1,13 @@
+.contact__icon {
+  width: 21rem;
+  height: 21rem;
+  background-color: #fff;
+  border-radius: var(--card-radius-theme, var(--card-radius));
+}
+
+.contact__icon--github {
+  fill: var(--c-github, #555);
+}
+.contact__icon--linkedin {
+  fill: var(--c-linkedin);
+}

@@ -1,5 +1,5 @@
-import Card from '../ui/Card';
-import Tag from '../project/Tag';
+import Card from '../components/ui/Card';
+import Tag from '../components/project/Tag';
 
 import classes from './ProjectView.module.css';
 

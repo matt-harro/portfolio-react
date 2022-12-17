@@ -1,12 +1,11 @@
 import { Fragment } from 'react';
 
-import Section from '../layout/sections/Section';
-import SectionContent from '../layout/sections/SectionContent';
-import Grid from '../layout/grids/Grid';
-import ProjectTile from '../project/ProjectTile';
-// import Project from '../project/Project';
+import Section from '../components/layout/sections/Section';
+import SectionContent from '../components/layout/sections/SectionContent';
+import Grid from '../components/layout/grids/Grid';
+import ProjectTile from '../components/project/ProjectTile';
 
-import projectDataJson from '../../db/db-projects.json';
+import projectDataJson from '../db/db-projects.json';
 
 const funcProjectListFilter = (jsxData, section) => {
   return jsxData.filter((tile) => tile.props.displaySections.includes(section));
@@ -17,7 +16,7 @@ const Projects = (props) => {
     return (
       <ProjectTile
         key={project.id}
-        imgPath={project.imgPath}
+        imgName={project.imgName}
         imgAltText={project.imgAltText}
         id={project.id}
         displaySections={project.displaySections}
@@ -49,7 +48,7 @@ const Projects = (props) => {
               Built On Course
             </h2>
           </hgroup>
-          <Grid type='auto-rows'>
+          <Grid type='aspect-4-3'>
             {funcProjectListFilter(projectList, 'course')}
           </Grid>
         </SectionContent>

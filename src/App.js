@@ -1,10 +1,10 @@
 import { Fragment, useState, useEffect } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Nav from './components/layout/nav/Nav';
-import Welcome from './components/pages/Welcome';
-import Contact from './components/pages/Contact';
-import Projects from './components/pages/Projects';
-import ProjectView from './components/pages/ProjectView';
+import Welcome from './pages/Welcome';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import ProjectView from './pages/ProjectView';
 
 const rootEl = document.querySelector('#root');
 const THEMES = ['default', 'theme--dark'];
