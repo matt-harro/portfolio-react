@@ -1,5 +1,6 @@
-import { Fragment, useState, useEffect } from 'react';
+import { useEffect, useContext, Fragment } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+import ThemeContext from './store/theme-context';
 import Nav from './components/layout/nav/Nav';
 import Welcome from './pages/Welcome';
 import Contact from './pages/Contact';
@@ -8,47 +9,24 @@ import ProjectView from './pages/ProjectView';
 
 const rootEl = document.querySelector('#root');
 
-const themes = ['light-theme', 'dark-theme', 'jedi-theme'];
-
 const App = (props) => {
-  // initial functionality to toggle through themes, while creating portfolio
-  // const [themes, setThemes] = useState([
-  //   'light-theme',
-  //   'dark-theme',
-  //   'jedi-theme',
-  // ]);
-  const [activeThemeIndex, setActiveThemeIndex] = useState(0);
+  const themeCtx = useContext(ThemeContext);
+  const { activeTheme } = themeCtx;
 
   useEffect(() => {
     rootEl.classList.remove(rootEl.classList.value || '*');
-
-    rootEl.classList.add(themes[activeThemeIndex]);
-  }, [activeThemeIndex]);
-
-  const changeThemesHandler = () => {
-    rootEl.classList.remove(rootEl.cl);
-    console.log(rootEl.classList.value);
-    setActiveThemeIndex((prevState) =>
-      prevState >= themes.length - 1 ? 0 : activeThemeIndex + 1
-    );
-    console.log(activeThemeIndex);
-  };
+    if (activeTheme) {
+      rootEl.classList.add(activeTheme);
+    }
+  }, [activeTheme]);
 
   return (
     <Fragment>
-      <nav>
-        <Nav
-          onChangeTheme={changeThemesHandler}
-          theme={themes[activeThemeIndex]}
-        />
-      </nav>
+      <Nav />
       <main>
         <Switch>
           <Route path='/welcome'>
-            <Welcome
-              onChangeTheme={changeThemesHandler}
-              theme={themes[activeThemeIndex]}
-            />
+            <Welcome />
           </Route>
           <Route path='/contact'>
             <Contact />

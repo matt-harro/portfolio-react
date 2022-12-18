@@ -1,10 +1,14 @@
+import { useContext } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import ThemeContext from '../../../store/theme-context';
 import Button from '../../ui/Button';
 
 import classes from './Nav.module.css';
 
 const Nav = (props) => {
-  const themeBtnText = props.theme.split('-').join(' ').toUpperCase();
+  const { activeTheme } = useContext(ThemeContext);
+  const themeBtnText = activeTheme.split('-').join(' ').toUpperCase();
+
   return (
     <nav className={classes.nav}>
       <div className={classes['nav--content']}>

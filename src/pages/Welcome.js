@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import Section from '../components/layout/sections/Section';
 import SectionContent from '../components/layout/sections/SectionContent';
+import ThemeContext from '../store/theme-context';
 import Button from '../components/ui/Button';
+import { useContext } from 'react';
 
 const Welcome = (props) => {
-  const themeBtnText = props.theme.split('-').join(' ').toUpperCase();
+  const themeCtx = useContext(ThemeContext);
+
+  const onThemeChangeHandler = () => {
+    themeCtx.rotateActiveTheme();
+  };
 
   return (
     <Section>
@@ -13,14 +19,26 @@ const Welcome = (props) => {
           <span className='superscript'>
             Matthew Harrison | Frontend Dev | ReactJS | Javascript
           </span>
-          <h1 className='typography-headline u-margin-top-3'>
-            Greetings Wanderer!
-          </h1>
+          <h1 className='typography-headline u-margin-top-3'>Greetings!</h1>
         </hgroup>
-        <div className='u-text-centered'>
+        <hgroup className=' hgroup u-text-centered'>
           <h3 className='typography-subhead'>Please pick your theme!</h3>
-          <Button onClickHandler={props.onChangeTheme} type={'accent'}>
-            {themeBtnText}
+          <Button onClickHandler={onThemeChangeHandler} type={'accent'}>
+            {themeCtx.activeTheme}
+          </Button>
+        </hgroup>
+        <p>
+          You've found the portfolio of Matthew Harrison. This is just a fun
+          side project to build a ReactJS Single Page App.
+        </p>
+        <p>
+          There is not a whole lot to it but check out my Projects and my
+          github. If you would like to review some of my code... Please do! I
+          love a good feedback sandwich.
+        </p>
+        <div className='u-text-centered'>
+          <Button type='accent'>
+            <Link to='/contact'>See Contact</Link>
           </Button>
         </div>
         {/* Picture */}

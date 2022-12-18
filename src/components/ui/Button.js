@@ -14,7 +14,6 @@ const Button = (props) => {
   // invert text color on button for theme and type
   let invert = null;
   if (props.children === 'JEDI THEME') invert = `${classes['btn--invert']}`;
-  console.log(props.type);
 
   return (
     <button
