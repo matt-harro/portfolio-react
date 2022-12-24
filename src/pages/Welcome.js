@@ -31,11 +31,11 @@ const Welcome = (props) => {
           <Button type='accent'>
             <Link to='/contact'>See Contact</Link>
           </Button>
+          <Button>
+            <Link to='/projects'>See Projects</Link>
+          </Button>
         </div>
         {/* Picture */}
-        <Button>
-          <Link to='/projects'>See Projects</Link>
-        </Button>
       </SectionContent>
     </Section>
   );

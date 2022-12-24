@@ -1,9 +1,10 @@
 .btn {
   padding: var(--ws-3) var(--ws-4);
   font-size: inherit;
-  color: #fff;
   border-radius: 5px;
   background: var(--color-primary-theme, var(--color-primary, #555));
+  color: var(--text-color-theme, var(--text-color), #000);
+  font-weight: 600;
 
   box-shadow: none;
   transform: translateY(0px);
@@ -22,14 +23,10 @@
   background: var(--accent-color-theme, var(--accent-color));
 }
 
-.btn--invert {
-  color: var(--text-color-invert-theme);
-}
-
-.btn--light-text {
+.btn--text-light {
   color: var(--text-color-light-theme, var(--text-color-light, #fff));
 }
 
-.btn--dark-text {
-  color: var(--text-color-dark-theme, var(--text-color-light, #000));
+.btn--text-dark {
+  color: var(--text-color-dark-theme, var(--text-color-dark, #000));
 }

@@ -1,7 +1,8 @@
-:root {
+// :root {
+.light-theme {
   // base styles
   --color-primary-theme: var(--c-css);
-  --accent-color-theme: #e67700;
+  --accent-color-theme: var(--c-html);
   --text-color: var(--oc-gray-9);
   --text-color-dark-theme: var(--oc-gray-9);
   --text-color-light-theme: #fff;
@@ -11,10 +12,6 @@
     var(--oc-gray-0),
     var(--oc-gray-2)
   );
-
-  // --font-headline-theme: 'noto sans';
-  // --font-subhead-theme: 'star jedi';
-  // --font-body-theme: 'fjalla';
 
   // nav component styles
   --nav-background: rgba(var(--oc-gray-9-rgb), 0.8);
@@ -33,6 +30,7 @@
   background: var(--background-theme, var(--background));
   min-height: 100vh;
   width: 100vw;
+  font-family: var(--font-body-theme, var(--font-body));
   color: var(--text-color-theme, var(--text-color));
 
   &::before {
