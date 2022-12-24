@@ -1,6 +1,4 @@
-import { useContext } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import ThemeContext from '../../store/theme-context';
 import ThemeButton from '../ui/ThemeButton';
 
 import classes from './Nav.module.css';
@@ -12,7 +10,7 @@ const Nav = (props) => {
         <ul>
           <li>
             <Link className={classes.logo} to='/'>
-              Logo
+              MATT
             </Link>
           </li>
           <li>

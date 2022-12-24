@@ -3,6 +3,11 @@
   flex-direction: row;
 }
 
+.u-flex-centered {
+  justify-content: center;
+  align-items: center;
+}
+
 .u-text-centered {
   text-align: center;
 }
@@ -17,4 +22,8 @@
 
 .u-margin-top-3 {
   margin-top: var(--ws-3);
+}
+
+.u-gap-6 {
+  gap: var(--ws-6);
 }

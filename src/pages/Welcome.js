@@ -27,7 +27,7 @@ const Welcome = (props) => {
           github. If you would like to review some of my code... Please do! I
           love a good feedback sandwich.
         </p>
-        <div className='u-text-centered'>
+        <div className='u-flex-row u-flex-centered  u-gap-6'>
           <Button type='accent'>
             <Link to='/contact'>See Contact</Link>
           </Button>
