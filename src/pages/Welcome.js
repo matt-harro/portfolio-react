@@ -19,13 +19,23 @@ const Welcome = (props) => {
           <ThemeButton />
         </hgroup>
         <p>
-          You've found the portfolio of Matthew Harrison. This is just a fun
-          side project to build a ReactJS Single Page App.
+          You've found Matthew Harrison's portfolio project. This portfolio is a
+          react single page app.
         </p>
         <p>
-          There is not a whole lot to it but check out my Projects and my
-          github. If you would like to review some of my code... Please do! I
-          love a good feedback sandwich.
+          Features a few themes I've been playing with. It uses context to track
+          the theme. Also the button text changes color to contrast with the
+          computed background style (not as simple as i thought it would have
+          been).
+        </p>
+        <p>
+          I will be adding more projects as I build them. I need an app to track
+          my strength training and a gps interval trainer for running workouts,
+          so keep an eye out for those.
+        </p>
+        <p>
+          If you would like to review some of my code... Please do! I love a
+          good feedback sandwich.
         </p>
         <div className='u-flex-row u-flex-centered  u-gap-6'>
           <Button type='accent'>
@@ -42,24 +52,3 @@ const Welcome = (props) => {
 };
 
 export default Welcome;
-
-/* <p>
-          Programming started for me when I wanted to build a website for my
-          technical swim coaching business. I got annoyed with not being able to
-          make the no-code gui to do what I wanted. So I buried myself in a few
-          MOOC courses and learned the basics.
-        </p>
-        <p>
-          I am currently in the fire brigade based in Towsville, Australia.
-          Programming has been just a hobby for the last 18ish months and I am
-          looking at making the transition into the world of Tech.
-        </p>
-        <p>
-          I really enjoy the challenge of the front end and am expanding my
-          knowledge of JS into the land of ReactJS. Infact i build this site as
-          a Single Page App using react.
-        </p>
-        <p>
-          I am looking to join a company where I can learn from experienced devs
-          and gain a deeper, wider knowledge base.
-        </p> */
