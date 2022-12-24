@@ -13,7 +13,7 @@ const Nav = (props) => {
               MATT
             </Link>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               activeClassName={classes.active}
               className={classes.navlink}
@@ -21,7 +21,7 @@ const Nav = (props) => {
             >
               Welcome
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               activeClassName={classes.active}

@@ -1,6 +1,11 @@
-// set rem size to 10px
+@import './media-queries'; // set rem size to 10px
+
 html {
   font-size: 62.5%;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 52.25%;
+  }
 }
 
 body {
