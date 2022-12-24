@@ -25,3 +25,11 @@
 .btn--invert {
   color: var(--text-color-invert-theme);
 }
+
+.btn--light-text {
+  color: var(--text-color-light-theme, var(--text-color-light, #fff));
+}
+
+.btn--dark-text {
+  color: var(--text-color-dark-theme, var(--text-color-light, #000));
+}

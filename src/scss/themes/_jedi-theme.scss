@@ -5,7 +5,8 @@
   --accent-color-theme: #eedb00;
   // --accent-color-theme: #15f2fd;
   --text-color-theme: var(--oc-gray-0);
-  --text-color-invert-theme: var(--oc-gray-9);
+  --text-color-dark-theme: var(--oc-gray-9);
+  --text-color-light-theme: var(--oc-gray-0);
 
   --font-headline-theme: 'star jedi';
   --font-subhead-theme: 'star jedi';
@@ -14,9 +15,15 @@
   --card-shadow-theme: var(--box-shadow);
   --background-theme: linear-gradient(
     to right bottom,
-    var(--oc-gray-9),
-    var(--oc-gray-8)
+    rgba(var(--oc-gray-9-rgb), 0.5),
+    rgba(var(--oc-gray-8-rgb), 0.5)
   );
+  --background-image-theme: url('../../img/dark-jedi.jpeg');
+
+  cursor: url('../../img/saber-cursor.png') 20 20, auto;
+  & *:hover {
+    cursor: url('../../img/saber-cursor.png') 20 20, auto;
+  }
 
   // nav component styles
   --nav-background-theme: none;

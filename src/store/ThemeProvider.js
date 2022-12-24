@@ -17,7 +17,6 @@ const themeReducer = (state, action) => {
           ? 0
           : state.activeThemeIndex + 1;
       const newTheme = state.themes[newIndex];
-      console.log(newTheme);
 
       return { ...state, activeThemeIndex: newIndex, activeTheme: newTheme };
     default:

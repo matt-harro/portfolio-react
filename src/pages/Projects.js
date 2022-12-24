@@ -35,7 +35,7 @@ const Projects = (props) => {
               Frontend Projects
             </h2>
           </hgroup>
-          <Grid type='auto-rows'>
+          <Grid type='aspect-4-3'>
             {funcProjectListFilter(projectList, 'featured')}
           </Grid>
         </SectionContent>

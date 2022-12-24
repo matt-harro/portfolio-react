@@ -3,7 +3,8 @@
   --color-primary-theme: var(--c-css);
   --accent-color-theme: #e67700;
   --text-color: var(--oc-gray-9);
-  --text-color-invert: #fff;
+  --text-color-dark-theme: var(--oc-gray-9);
+  --text-color-light-theme: #fff;
   --primary-color: yellow;
   --background: linear-gradient(
     to right bottom,
@@ -33,4 +34,18 @@
   min-height: 100vh;
   width: 100vw;
   color: var(--text-color-theme, var(--text-color));
+
+  &::before {
+    content: 'test';
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+
+    background-image: var(--background-image-theme);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 }

@@ -1,7 +1,7 @@
 import { useEffect, useContext, Fragment } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import ThemeContext from './store/theme-context';
-import Nav from './components/layout/nav/Nav';
+import Nav from './components/nav/Nav';
 import Welcome from './pages/Welcome';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';

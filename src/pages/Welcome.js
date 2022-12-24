@@ -1,31 +1,22 @@
 import { Link } from 'react-router-dom';
 import Section from '../components/layout/sections/Section';
 import SectionContent from '../components/layout/sections/SectionContent';
-import ThemeContext from '../store/theme-context';
 import Button from '../components/ui/Button';
-import { useContext } from 'react';
+import ThemeButton from '../components/ui/ThemeButton';
 
 const Welcome = (props) => {
-  const themeCtx = useContext(ThemeContext);
-
-  const onThemeChangeHandler = () => {
-    themeCtx.rotateActiveTheme();
-  };
-
   return (
     <Section>
       <SectionContent type='narrow'>
         <hgroup className='hgroup u-text-centered'>
           <span className='superscript'>
-            Matthew Harrison | Frontend Dev | ReactJS | Javascript
+            Frontend Dev | ReactJS | Javascript
           </span>
           <h1 className='typography-headline u-margin-top-3'>Greetings!</h1>
         </hgroup>
         <hgroup className=' hgroup u-text-centered'>
           <h3 className='typography-subhead'>Please pick your theme!</h3>
-          <Button onClickHandler={onThemeChangeHandler} type={'accent'}>
-            {themeCtx.activeTheme}
-          </Button>
+          <ThemeButton />
         </hgroup>
         <p>
           You've found the portfolio of Matthew Harrison. This is just a fun
